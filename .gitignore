@@ -1,0 +1,6 @@
+# Ignore node modules and build files
+package-lock.json
+node_modules/
+dist/
+.env
+.vscode/
