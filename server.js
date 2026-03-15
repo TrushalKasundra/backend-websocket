@@ -12,7 +12,7 @@ app.use(cors());
 const allowedOrigins = process.env.ORIGIN_URL ? process.env.ORIGIN_URL.split(',') : [];
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:5252", "http://192.168.1.143:5252"],
+        origin: allowedOrigins,
         methods: ["GET", "PUT"],
     },
 });
